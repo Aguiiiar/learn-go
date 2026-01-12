@@ -40,4 +40,10 @@ func main() {
 
 	fmt.Println(ViewAreaRect(rectangle))
 	fmt.Println(ViewAreaCircle(circle))
+
+	// interface sem tipo
+	var slices []interface{}
+	slices = append(slices, rectangle)
+	slices = append(slices, circle)
+	fmt.Println(slices)
 }
